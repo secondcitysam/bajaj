@@ -11,7 +11,7 @@ public class FinalQueryRequest {
         return query;
     }
 
-    public void setQuery(String query) {
+    public void setFinalQuery(String query) {
         this.query = query;
     }
 }
