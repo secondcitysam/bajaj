@@ -15,7 +15,16 @@ public class ApiWorkApplication {
 
     }
 
-
+    @Bean
+    public CommandLineRunner run(ApiService apiService)
+    {
+        return new CommandLineRunner() {
+            @Override
+            public void run(String... args) throws Exception {
+                apiService.executeFlow();
+            }
+        };
+    }
 
 
 }
